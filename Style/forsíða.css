@@ -1,0 +1,176 @@
+.h1-classLeval {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nafn-á-character {
+  border: none;
+  border-bottom: 5px solid black;
+  height: 2rem;
+  width: 15rem;
+}
+
+.allt-um-class {
+  border: solid 5px black;
+  border-radius: 10px;
+  width: 26rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.classAndLevel-background-playerName {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.race-alignment-experiencePoints {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input-Pclass {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-allt-class {
+  width: 6rem;
+  height: 1rem;
+  border: none;
+  border-bottom: solid 1px black;
+  margin-top: 10px;
+}
+
+.class-texsti {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* efri parturinn  */
+
+.útlínur {
+  margin: auto;
+  border: solid 1px black;
+  height: 35rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ability-modifier {
+  width: 10rem;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.STRENGTH, 
+.DEXTERITY, 
+.CONSTITUTION,
+.INTELLIGENCE,
+.WISDOM,
+.CHARISMA {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 3px black;
+  align-items: center;
+  height: 5rem;
+  border-radius: 5px;
+}
+
+.ability-modifiers-display {
+ font-size: 20px; 
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-ability-mdifiers {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 90px;
+  text-align: center;
+}
+
+/* ----- */
+
+.skills {
+  border: 1px solid blue;
+  width: 20rem;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inspiration-div, 
+.proficiency-bonus-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 5px black;
+  width: 70%;
+}
+
+.inspiration-modifier, 
+.proficiency-modifier {
+  border: solid 1px black;
+  width: 2rem;
+  height: 2rem;
+}
+
+.saving-throws-div{
+  border: solid 5px black;
+}
+
+.ST-str,
+.ST-dex,
+.ST-con,
+.ST-int,
+.ST-wis,
+.ST-chr {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 9rem;
+  align-items: center;
+}
+
+
+
+
+/* ----- */
+
+
+
+
+.HIT-POINTS-AC {
+  border: 1px solid yellow;
+  width: 40rem;
+  order: 3;
+}
+
+/* ----- */
+
+.PERSONALITY-TRAITS {
+  border: 1px solid green;
+  width: 30rem;
+  order: 4;
+}

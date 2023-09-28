@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forsíða</title>
+  <link rel="stylesheet" href="Style/forsíða.css">
+</head>
+<body>
+  <div class="h1-classLeval">
+    <div>
+      <h1>D&D Character Sheet </h1>
+      <input class="nafn-á-character" type="text">
+    </div>
+    <div class="allt-um-class">
+      <div class="classAndLevel-background-playerName">
+        <div class="input-Pclass">
+          <input class="input-allt-class" type="text">
+          <p class="class-texsti">CLASS & LEVEL</p>
+        </div>
+        <div class="input-Pclass">
+          <input class="input-allt-class" type="text">
+          <p class="class-texsti">BACKGROUND</p>
+        </div>
+        <div class="input-Pclass">
+          <input class="input-allt-class" type="text">
+          <p class="class-texsti">PLAYER NAME</p>
+        </div>
+      </div>
+      <div class="race-alignment-experiencePoints">
+        <div class="input-Pclass">
+          <input class="input-allt-class" type="text">
+          <p class="class-texsti">RACE</p>
+        </div>
+        <div class="input-Pclass">
+          <input class="input-allt-class" type="text">
+          <p class="class-texsti">ALIGNMENT</p>
+        </div>
+        <div class="input-Pclass">
+          <input class="input-allt-class" type="text">
+          <p class="class-texsti">EXPERIENCE POINTS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="útlínur">
+    <div class="ability-modifier">
+      <div class="STRENGTH">
+        <div class="ability-modifiers-display">STRENGTH</div>
+        <div class="ability-modifiers-display" id="str-modifier"></div>
+        <input class="input-ability-mdifiers" id="str-input" onkeydown="strModifier()">
+      </div>
+      <div class="DEXTERITY">
+        <div class="ability-modifiers-display">DEXTERITY</div>
+        <div class="ability-modifiers-display" id="dex-modifier"></div>
+        <input class="input-ability-mdifiers" id="dex-input" onkeydown="dexModifier()">
+      </div>
+      <div class="CONSTITUTION">
+        <div class="ability-modifiers-display">CONSTITUTION</div>
+        <div class="ability-modifiers-display" id="con-modifier"></div>
+        <input class="input-ability-mdifiers" id="con-input" onkeydown="conModifier()">
+      </div>
+      <div class="INTELLIGENCE">
+        <div class="ability-modifiers-display">INTELLIGENCE</div>
+        <div class="ability-modifiers-display" id="int-modifier"></div>
+        <input class="input-ability-mdifiers" id="int-input" onkeydown="intModifier()">
+      </div>
+      <div class="WISDOM">
+        <div class="ability-modifiers-display">WISDOM</div>
+        <div class="ability-modifiers-display" id="wis-modifier"></div>
+        <input class="input-ability-mdifiers" id="wis-input" onkeydown="wisModifier()">
+      </div>
+      <div class="CHARISMA">
+        <div class="ability-modifiers-display">CHARISMA</div>
+        <div class="ability-modifiers-display" id="chr-modifier"></div>
+        <input class="input-ability-mdifiers" id="chr-input" onkeydown="chrModifier()">
+      </div>
+    </div>
+    <div class="skills">
+      <div class="inspiration-div">
+        <div class="inspiration-modifier"></div>
+        <div>INSPIRATION</div>
+      </div>
+
+      <div class="proficiency-bonus-div">
+        <div class="proficiency-modifier"></div>
+        <div>PROFICIENCY BONUS</div>
+      </div>
+
+      <div class="saving-throws-div">
+        <div class="ST-str"> 
+          <input type="checkbox">
+          <div id="str-modifier-st"></div>
+          <div>Strength</div>
+        </div>
+        <div class="ST-dex">
+            <input type="checkbox">
+          <div id="dex-modifier-st"></div>
+          <div>Dexterity</div>
+        </div>
+        <div class="ST-con">
+            <input type="checkbox">
+          <div id="con-modifier-st"></div>
+          <div>Constitution</div>
+        </div>
+        <div class="ST-int">
+            <input type="checkbox">
+          <div id="int-modifier-st"></div>
+          <div>Intelligence</div>
+        </div>
+        <div class="ST-wis">
+            <input type="checkbox">
+          <div id="wis-modifier-st"></div>
+          <div>Wisdom</div>
+        </div>
+        <div class="ST-chr">
+            <input type="checkbox">
+          <div id="chr-modifier-st"></div>
+          <div>Charisma</div>
+        </div>
+      </div>
+      
+      <div>
+        
+      </div>
+    </div>
+    <div class="HIT-POINTS-AC">
+
+    </div>
+    <div class="PERSONALITY-TRAITS">
+
+    </div>
+  </div>
+  <script src="Javascript/forsíða.js"></script>
+</body>
+</html>
