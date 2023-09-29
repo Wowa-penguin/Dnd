@@ -137,6 +137,10 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   padding-left: 5%;
+} 
+
+.proficiency-bonus-texsti {
+  font-size: 15px;
 }
 
 .saving-throws-div{
@@ -152,12 +156,25 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  width: 9rem;
+  width: 10rem;
   align-items: center;
 }
 
+.skill-nafn {
+  font-size: 11px;
+}
 
+.útskýring {
+  font-size: 8px;
+  color: gray;
+}
 
+.skills-svæðið {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border: solid 4px black;
+}
 
 /* ----- */
 

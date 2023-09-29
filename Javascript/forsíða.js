@@ -2,7 +2,8 @@ const updateModifier = (abilityName) => {
   const inputValue = document.getElementById(`${abilityName}-input`).value;
   const displayElement = document.getElementById(`${abilityName}-modifier`);
   const displayStElement = document.getElementById(`${abilityName}-modifier-st`);
-
+  const displaySkillElements = document.querySelectorAll(`.${abilityName}-modifier-skill`)
+  
   const modifierMapping = {
     "4": -2,
     "5": -2,
@@ -28,9 +29,15 @@ const updateModifier = (abilityName) => {
   if (modifier >= 0) {
     displayElement.innerHTML = '+' + modifier;
     displayStElement.innerHTML = '+' + modifier;
+    displaySkillElements.forEach((element) => {
+      element.innerHTML = '+' + modifier;
+    });
   } else {
     displayElement.innerHTML = modifier;
     displayStElement.innerHTML = modifier;
+    displaySkillElements.forEach((element) => {
+      element.innerHTML = modifier;
+    });
   }
 };
 
@@ -46,3 +53,19 @@ const proficiencyModifier = (checkboxId, modifierId, originalValue) => {
     modifier.innerText = originalValue;
   }
 };
+
+const proficiencyModifierForSkill = (checkboxId, modifierClass, originalValue) => {
+  const checkBoxes = document.querySelector(`.${checkboxId}`);
+  const modifiers = document.querySelector(`.${modifierClass}`);
+  const proficiency = parseFloat(document.getElementById('proficiency-modifier').innerText);
+
+  
+  if (checkBoxes.checked) {
+    const newModifier = parseFloat(modifiers.innerText) + proficiency;
+    modifiers.innerText = '+' + newModifier;
+  } else {
+    modifiers.innerText = originalValue;
+  }
+};
+
+// það þarf að bæta við nýjy fun => þar sem er sín fram á svo bara láta það röna báðar í einnu 
