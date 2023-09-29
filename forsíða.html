@@ -48,73 +48,73 @@
       <div class="STRENGTH">
         <div class="ability-modifiers-display">STRENGTH</div>
         <div class="ability-modifiers-display" id="str-modifier"></div>
-        <input class="input-ability-mdifiers" id="str-input" onkeydown="strModifier()">
+        <input class="input-ability-mdifiers" id="str-input" onkeydown="updateModifier('str')">
       </div>
       <div class="DEXTERITY">
         <div class="ability-modifiers-display">DEXTERITY</div>
         <div class="ability-modifiers-display" id="dex-modifier"></div>
-        <input class="input-ability-mdifiers" id="dex-input" onkeydown="dexModifier()">
+        <input class="input-ability-mdifiers" id="dex-input" onkeydown="updateModifier('dex')">
       </div>
       <div class="CONSTITUTION">
         <div class="ability-modifiers-display">CONSTITUTION</div>
         <div class="ability-modifiers-display" id="con-modifier"></div>
-        <input class="input-ability-mdifiers" id="con-input" onkeydown="conModifier()">
+        <input class="input-ability-mdifiers" id="con-input" onkeydown="updateModifier('con')">
       </div>
       <div class="INTELLIGENCE">
         <div class="ability-modifiers-display">INTELLIGENCE</div>
         <div class="ability-modifiers-display" id="int-modifier"></div>
-        <input class="input-ability-mdifiers" id="int-input" onkeydown="intModifier()">
+        <input class="input-ability-mdifiers" id="int-input" onkeydown="updateModifier('int')">
       </div>
       <div class="WISDOM">
         <div class="ability-modifiers-display">WISDOM</div>
         <div class="ability-modifiers-display" id="wis-modifier"></div>
-        <input class="input-ability-mdifiers" id="wis-input" onkeydown="wisModifier()">
+        <input class="input-ability-mdifiers" id="wis-input" onkeydown="updateModifier('wis')">
       </div>
       <div class="CHARISMA">
         <div class="ability-modifiers-display">CHARISMA</div>
         <div class="ability-modifiers-display" id="chr-modifier"></div>
-        <input class="input-ability-mdifiers" id="chr-input" onkeydown="chrModifier()">
+        <input class="input-ability-mdifiers" id="chr-input" onkeydown="updateModifier('chr')">
       </div>
     </div>
     <div class="skills">
       <div class="inspiration-div">
-        <div class="inspiration-modifier"></div>
+        <div class="inspiration-modifier">2</div>
         <div>INSPIRATION</div>
       </div>
 
       <div class="proficiency-bonus-div">
-        <div class="proficiency-modifier"></div>
-        <div>PROFICIENCY BONUS</div>
+        <div class="proficiency-modifier" id="proficiency-modifier">2</div>
+        <div class="proficiency-bonus-texsti">PROFICIENCY BONUS</div>
       </div>
 
       <div class="saving-throws-div">
         <div class="ST-str"> 
-          <input type="checkbox">
+          <input type="checkbox" id="checkBoxSt" onclick="proficiencyModifier('checkBoxSt', 'str-modifier-st', 0)">
           <div id="str-modifier-st"></div>
           <div>Strength</div>
         </div>
         <div class="ST-dex">
-            <input type="checkbox">
+            <input type="checkbox" id="checkbox-st-dex" onclick="proficiencyModifier('checkbox-st-dex', 'dex-modifier-st', 0)">
           <div id="dex-modifier-st"></div>
           <div>Dexterity</div>
         </div>
         <div class="ST-con">
-            <input type="checkbox">
+            <input type="checkbox" id="checkbox-st-con" onclick="proficiencyModifier('checkbox-st-con', 'con-modifier-st', 0)">
           <div id="con-modifier-st"></div>
           <div>Constitution</div>
         </div>
         <div class="ST-int">
-            <input type="checkbox">
+            <input type="checkbox" id="checkbox-st-int" onclick="proficiencyModifier('checkbox-st-int', 'int-modifier-st', 0)">
           <div id="int-modifier-st"></div>
           <div>Intelligence</div>
         </div>
         <div class="ST-wis">
-            <input type="checkbox">
+            <input type="checkbox" id="checkbox-st-wis" onclick="proficiencyModifier('checkbox-st-wis', 'wis-modifier-st', 0)">
           <div id="wis-modifier-st"></div>
           <div>Wisdom</div>
         </div>
         <div class="ST-chr">
-            <input type="checkbox">
+            <input type="checkbox" id="checkbox-st-chr" onclick="proficiencyModifier('checkbox-st-chr', 'chr-modifier-st', 0)">
           <div id="chr-modifier-st"></div>
           <div>Charisma</div>
         </div>
