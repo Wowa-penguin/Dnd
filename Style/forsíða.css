@@ -60,10 +60,11 @@
 .útlínur {
   margin: auto;
   border: solid 1px black;
-  height: 35rem;
+  height: 50rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 1rem;
 }
 
 .ability-modifier {
@@ -85,12 +86,12 @@
   justify-content: space-between;
   border: solid 3px black;
   align-items: center;
-  height: 5rem;
-  border-radius: 5px;
+  height: 7rem;
+  border-radius: 30px;
 }
 
 .ability-modifiers-display {
- font-size: 20px; 
+ font-size: 30px; 
 }
 
 
@@ -178,13 +179,77 @@ input::-webkit-inner-spin-button {
 
 /* ----- */
 
-
-
-
 .HIT-POINTS-AC {
   border: 1px solid yellow;
   width: 40rem;
   order: 3;
+}
+
+.ac-initiative-speed {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.ac,
+.initiative,
+.speed {
+  border: solid 5px black;
+  height: 5rem;
+  width: 6rem;
+  border-radius: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-hit-points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HIT-POINTS {
+  border: solid 1px red;
+  width: auto;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HIT-POINTS-input {
+  width: 25px;
+}
+
+.display-hit-points-texst {
+  font-size: 40px;
+}
+
+.HIT-POINTS-BUTTONS {
+  display: flex;
+  gap: 5px;
+}
+
+.HIT-POINTS-button-mínus,
+.HIT-POINTS-button-Plús {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.HIT-POINTS-button-mínus {
+  background-color: red;
+}
+
+.HIT-POINTS-button-Plús {
+  background-color: green;
 }
 
 /* ----- */

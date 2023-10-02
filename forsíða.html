@@ -46,32 +46,32 @@
   <div class="útlínur">
     <div class="ability-modifier">
       <div class="STRENGTH">
-        <div class="ability-modifiers-display">STRENGTH</div>
+        <div class="ability-modifiers-nafn">STRENGTH</div>
         <div class="ability-modifiers-display" id="str-modifier"></div>
         <input class="input-ability-mdifiers" id="str-input" onkeydown="updateModifier('str')">
       </div>
       <div class="DEXTERITY">
-        <div class="ability-modifiers-display">DEXTERITY</div>
+        <div class="ability-modifiers-nafn">DEXTERITY</div>
         <div class="ability-modifiers-display" id="dex-modifier"></div>
         <input class="input-ability-mdifiers" id="dex-input" onkeydown="updateModifier('dex')">
       </div>
       <div class="CONSTITUTION">
-        <div class="ability-modifiers-display">CONSTITUTION</div>
+        <div class="ability-modifiers-nafn">CONSTITUTION</div>
         <div class="ability-modifiers-display" id="con-modifier"></div>
         <input class="input-ability-mdifiers" id="con-input" onkeydown="updateModifier('con')">
       </div>
       <div class="INTELLIGENCE">
-        <div class="ability-modifiers-display">INTELLIGENCE</div>
+        <div class="ability-modifiers-nafn">INTELLIGENCE</div>
         <div class="ability-modifiers-display" id="int-modifier"></div>
         <input class="input-ability-mdifiers" id="int-input" onkeydown="updateModifier('int')">
       </div>
       <div class="WISDOM">
-        <div class="ability-modifiers-display">WISDOM</div>
+        <div class="ability-modifiers-nafn">WISDOM</div>
         <div class="ability-modifiers-display" id="wis-modifier"></div>
         <input class="input-ability-mdifiers" id="wis-input" onkeydown="updateModifier('wis')">
       </div>
       <div class="CHARISMA">
-        <div class="ability-modifiers-display">CHARISMA</div>
+        <div class="ability-modifiers-nafn">CHARISMA</div>
         <div class="ability-modifiers-display" id="chr-modifier"></div>
         <input class="input-ability-mdifiers" id="chr-input" onkeydown="updateModifier('chr')">
       </div>
@@ -258,7 +258,46 @@
       </div>
     </div>
     <div class="HIT-POINTS-AC">
+      <div class="ac-initiative-speed">
+        <div class="ac">
+          <div class="ability-modifiers-display">13</div>
+          <div>A.C</div>
+        </div>
+        <div class="initiative">
+          <div class="ability-modifiers-display">+3</div>
+          <div>INITIATIVE</div>
+        </div>
+        <div class="speed">
+          <div class="ability-modifiers-display">40ft</div>
+          <div>SPEED</div>
+        </div>
+      </div>
+      <div class="HIT-POINTS">
+        <div class="display-hit-points">
+          <input class="HIT-POINTS-input" type="number">  <!--á eftir að bæta inn input í js  -->
+          <div class="display-hit-points-texst" id="HIT-POINTS"></div>
+        </div>
+        <div class="HIT-POINTS-BUTTONS">
+          <button class="HIT-POINTS-button-Plús" id="plús-10" onclick="hitPointsButtons(10)">+10</button>
+          <button class="HIT-POINTS-button-Plús" id="plús-5" onclick="hitPointsButtons(5)">+5</button>
+          <button class="HIT-POINTS-button-Plús" id="plús-1" onclick="hitPointsButtons(1)">+1</button>
+          <button class="HIT-POINTS-button-mínus" id="mínus-1" onclick="hitPointsButtons(-1)">-1</button>
+          <button class="HIT-POINTS-button-mínus" id="mínus-5" onclick="hitPointsButtons(-5)">-5</button>
+          <button class="HIT-POINTS-button-mínus" id="mínus-10" onclick="hitPointsButtons(-10)">-10</button>
+        </div>
+      </div>
+      <div>
+       
+      </div>
+      <div>
 
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
     </div>
     <div class="PERSONALITY-TRAITS">
       

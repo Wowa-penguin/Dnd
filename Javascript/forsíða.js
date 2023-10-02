@@ -72,4 +72,12 @@ const proficiencyModifierForSkill = (nafn, modifierClass, originalValue) => {
   }
 };
 
-// það þarf að bæta við nýjy fun => þar sem er sín fram á svo bara láta það röna báðar í einnu 
+const hitPointsButtons = (hlutfal) => {
+  const hitPoints = document.getElementById('HIT-POINTS').innerText
+  const	numberAfHitPoints = Number(hitPoints);
+  const útrekna = numberAfHitPoints + hlutfal;
+  console.log(útrekna);
+  document.getElementById('HIT-POINTS').innerText = útrekna ;
+};
+
+// þarf að bæta við input sem sínir hp 
