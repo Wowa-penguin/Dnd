@@ -39,6 +39,10 @@ const updateModifier = (abilityName) => {
       element.innerHTML = modifier;
     });
   }
+  console.log(inputValue);
+  console.log(displayElement);
+  console.log(displayStElement);
+  console.log(displaySkillElements);
 };
 
 const proficiencyModifier = (checkboxId, modifierId, originalValue) => {
@@ -54,9 +58,9 @@ const proficiencyModifier = (checkboxId, modifierId, originalValue) => {
   }
 };
 
-const proficiencyModifierForSkill = (checkboxId, modifierClass, originalValue) => {
-  const checkBoxes = document.querySelector(`.${checkboxId}`);
-  const modifiers = document.querySelector(`.${modifierClass}`);
+const proficiencyModifierForSkill = (nafn, modifierClass, originalValue) => {
+  const checkBoxes = document.getElementById(nafn);
+  const modifiers = document.getElementById(modifierClass);
   const proficiency = parseFloat(document.getElementById('proficiency-modifier').innerText);
 
   
