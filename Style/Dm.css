@@ -1,0 +1,39 @@
+.útlínur {
+  border: solid 1px black;
+  margin: auto;
+  width: auto;
+  height: 20rem;
+  display: flex;
+}
+
+.Goblin {
+  border: solid 2px black;
+  width: 50%;
+  display: flex;
+}
+
+.ability-modifier {
+  display: flex;
+  flex-direction: column;
+}
+
+.str, .dex, .con, .int, .wis, .cha 
+{
+  border: solid 1px blue;
+  height: 3.2rem;
+  width: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.texsti-ability-moifier {
+  font-size: 8px;
+}
+
+.ability-st {
+  border: solid 1px red;
+  width: 25%;
+  height: 50%;
+}
