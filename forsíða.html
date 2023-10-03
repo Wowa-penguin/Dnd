@@ -12,15 +12,16 @@
       <h1>D&D Character Sheet </h1>
       <input class="nafn-á-character" type="text">
     </div>
+    <!--Hér er það sem þú situr inn fyrir class en það á eftir að gera það þannig að það sem þú situr inn skftir máli-->
     <div class="allt-um-class">
       <div class="classAndLevel-background-playerName">
         <div class="input-Pclass">
           <input class="input-allt-class" type="text">
-          <p class="class-texsti">CLASS & LEVEL</p>
+          <p class="class-texsti">CLASS</p>
         </div>
         <div class="input-Pclass">
           <input class="input-allt-class" type="text">
-          <p class="class-texsti">BACKGROUND</p>
+          <p class="class-texsti">LEVEL</p>
         </div>
         <div class="input-Pclass">
           <input class="input-allt-class" type="text">
@@ -43,7 +44,9 @@
       </div>
     </div>
   </div>
-  <div class="útlínur">
+
+  <!--Hér kemur ability sem sína fram á allt það er mikilvægt fun=> sem sínr allt og virkar (updateModifier)-->
+  <div class="útlínur"> <!--Þetta útlínur div er utanum allt og er mjög mikilvægt-->
     <div class="ability-modifier">
       <div class="STRENGTH">
         <div class="ability-modifiers-nafn">STRENGTH</div>
@@ -76,6 +79,8 @@
         <input class="input-ability-mdifiers" id="chr-input" onkeydown="updateModifier('chr')">
       </div>
     </div>
+
+    <!--Þetta sínir allt skills svæðið með st, skills, inspiration, proficiency og heldur utanum það-->
     <div class="skills">
       <div class="inspiration-div">
         <div class="inspiration-modifier">2</div>
@@ -87,8 +92,8 @@
         <div class="proficiency-bonus-texsti">PROFICIENCY BONUS</div>
       </div>
 
+      <!-- Þetta er öll saving throws sem virka með proficency modifier sem bætir við ef á við -->
       <div class="saving-throws-div">
-
         <div class="ST-str"> 
           <input type="checkbox" id="checkBoxSt" onclick="proficiencyModifier('checkBoxSt', 'str-modifier-st', 0)">
           <div id="str-modifier-st"></div>
@@ -124,10 +129,11 @@
           <div id="chr-modifier-st"></div>
           <div>Charisma</div>
         </div>
+        <div class="st-texsti">SAVING THROWS</div>
       </div>
 
-      <!-- Smá bil plís -->
       
+      <!-- Þetta eru öll skils sem virka með proficency modifier ef það á við -->
       <div class="skills-svæðið">
         <div class="ST-dex">
           <input type="checkbox" id="checkbox-skill-Acrobatics" onclick="proficiencyModifierForSkill('checkbox-skill-Acrobatics', 'Acrobatics-modifier-skill', 0)">
@@ -254,49 +260,54 @@
           <div class="skill-nafn">Survival</div>
           <div class="útskýring">(Wis)</div>
         </div>
-
+        <div class="st-texsti">SKILLS</div>
       </div>
     </div>
+
+    <!--Þetta er þar sem Hp og ac byrja en skiftast í tvent vegna litum í bakrun-->
     <div class="HIT-POINTS-AC">
-      <div class="ac-initiative-speed">
-        <div class="ac">
-          <div class="ability-modifiers-display">13</div>
-          <div>A.C</div>
+      <div class="ac-hp-deathSaves-div"> <!--Þetta er til að fá gráan lit-->
+        <div class="ac-initiative-speed">
+          <div class="ac">
+            <div class="ability-modifiers-display">13</div>
+            <div>A.C</div>
+          </div>
+          <div class="initiative">
+            <div class="ability-modifiers-display">+3</div>
+            <div>INITIATIVE</div>
+          </div>
+          <div class="speed">
+            <div class="ability-modifiers-display">40ft</div>
+            <div>SPEED</div>
+          </div>
         </div>
-        <div class="initiative">
-          <div class="ability-modifiers-display">+3</div>
-          <div>INITIATIVE</div>
+        <div class="HIT-POINTS">
+          <div class="display-hit-points-saman-flex">
+            <div>Hit Point Maximum</div>
+            <input class="HIT-POINTS-input" type="number" id="hit-points-input" oninput="updateHitPoints('hit-points-input', 'HIT-POINTS')"> <!-- Use oninput instead of onkeydown -->
+          </div>
+          <div class="display-hit-points-saman-flex">
+            <div class="display-hit-points-texst" id="HIT-POINTS"></div>
+            <div class="display-hit-points-texst">Hp</div>
+          </div>
+          <div class="HIT-POINTS-BUTTONS">
+            <button class="HIT-POINTS-button-Plús" id="plús-10" onclick="hitPointsButtons(10)">+10</button>
+            <button class="HIT-POINTS-button-Plús" id="plús-5" onclick="hitPointsButtons(5)">+5</button>
+            <button class="HIT-POINTS-button-Plús" id="plús-1" onclick="hitPointsButtons(1)">+1</button>
+            <button class="HIT-POINTS-button-mínus" id="mínus-1" onclick="hitPointsButtons(-1)">-1</button>
+            <button class="HIT-POINTS-button-mínus" id="mínus-5" onclick="hitPointsButtons(-5)">-5</button>
+            <button class="HIT-POINTS-button-mínus" id="mínus-10" onclick="hitPointsButtons(-10)">-10</button>
+          </div>
         </div>
-        <div class="speed">
-          <div class="ability-modifiers-display">40ft</div>
-          <div>SPEED</div>
+          <div class="death-saves">
+          
+          </div>
+      </div>    
+      <div class="attacks-spellcasting-equipment-div"> <!--Hér er ekki grár litur bakvið-->
+        <div class="attacks-spellcasting">
         </div>
-      </div>
-      <div class="HIT-POINTS">
-        <div class="display-hit-points">
-          <input class="HIT-POINTS-input" type="number">  <!--á eftir að bæta inn input í js  -->
-          <div class="display-hit-points-texst" id="HIT-POINTS"></div>
+        <div class="equipment">
         </div>
-        <div class="HIT-POINTS-BUTTONS">
-          <button class="HIT-POINTS-button-Plús" id="plús-10" onclick="hitPointsButtons(10)">+10</button>
-          <button class="HIT-POINTS-button-Plús" id="plús-5" onclick="hitPointsButtons(5)">+5</button>
-          <button class="HIT-POINTS-button-Plús" id="plús-1" onclick="hitPointsButtons(1)">+1</button>
-          <button class="HIT-POINTS-button-mínus" id="mínus-1" onclick="hitPointsButtons(-1)">-1</button>
-          <button class="HIT-POINTS-button-mínus" id="mínus-5" onclick="hitPointsButtons(-5)">-5</button>
-          <button class="HIT-POINTS-button-mínus" id="mínus-10" onclick="hitPointsButtons(-10)">-10</button>
-        </div>
-      </div>
-      <div>
-       
-      </div>
-      <div>
-
-      </div>
-      <div>
-
-      </div>
-      <div>
-
       </div>
     </div>
     <div class="PERSONALITY-TRAITS">

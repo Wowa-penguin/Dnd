@@ -39,11 +39,7 @@ const updateModifier = (abilityName) => {
       element.innerHTML = modifier;
     });
   }
-  console.log(inputValue);
-  console.log(displayElement);
-  console.log(displayStElement);
-  console.log(displaySkillElements);
-};
+}; // þetta er til að sína alla modifiera og sínir það í st og skills 
 
 const proficiencyModifier = (checkboxId, modifierId, originalValue) => {
   const checkBox = document.getElementById(checkboxId);
@@ -56,7 +52,7 @@ const proficiencyModifier = (checkboxId, modifierId, originalValue) => {
   } else {
     modifier.innerText = originalValue;
   }
-};
+}; // þetta er til að bæta við proficency modifier við ST 
 
 const proficiencyModifierForSkill = (nafn, modifierClass, originalValue) => {
   const checkBoxes = document.getElementById(nafn);
@@ -70,14 +66,23 @@ const proficiencyModifierForSkill = (nafn, modifierClass, originalValue) => {
   } else {
     modifiers.innerText = originalValue;
   }
-};
+}; // þetta er til að bæta við proficency modifier við skill 
 
 const hitPointsButtons = (hlutfal) => {
-  const hitPoints = document.getElementById('HIT-POINTS').innerText
+  const hitPoints = document.getElementById('HIT-POINTS').innerText;
   const	numberAfHitPoints = Number(hitPoints);
   const útrekna = numberAfHitPoints + hlutfal;
   console.log(útrekna);
   document.getElementById('HIT-POINTS').innerText = útrekna ;
-};
+}; // þetta er + og - buttons til að gefa og taka hp frá 10 5 1
 
-// þarf að bæta við input sem sínir hp 
+const updateHitPoints = (inputId, hitPointsId) => {
+  const inputValue = parseFloat(document.getElementById(inputId).value);
+  const hitPointsElement = document.getElementById(hitPointsId);
+  
+  if (!isNaN(inputValue)) {
+    hitPointsElement.innerText = inputValue;
+  } else {
+    console.error('Invalid input. Please enter a valid number.');
+  }
+}; // Þetta er til að sína hp sem maður byrjar með
