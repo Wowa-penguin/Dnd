@@ -8,8 +8,9 @@
 
 .Goblin {
   border: solid 2px black;
-  width: 50%;
+  width: 45%;
   display: flex;
+  gap: 10px;
 }
 
 .ability-modifier {
@@ -17,9 +18,9 @@
   flex-direction: column;
 }
 
-.str, .dex, .con, .int, .wis, .cha 
+.str-div, .dex-div, .con-div, .int-div, .wis-div, .cha-div 
 {
-  border: solid 1px blue;
+  border: solid 1px black;
   height: 3.2rem;
   width: 4.5rem;
   display: flex;
@@ -32,11 +33,30 @@
   font-size: 8px;
 }
 
+.texsti-ability-moifier-st {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
 /* St */
 
 .ability-st {
-  border: solid 1px red;
   width: 25%;
   height: 50%;
 }
 
+.ability-st-div {
+  border: solid 1px black;
+  height: 1.5rem;
+  width: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* HIT-POINTS-AC */
+
+.HIT-POINTS-AC {
+  border: solid 1px blue;
+  width: 50%;
+}
