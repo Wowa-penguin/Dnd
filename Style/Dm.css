@@ -32,8 +32,11 @@
   font-size: 8px;
 }
 
+/* St */
+
 .ability-st {
   border: solid 1px red;
   width: 25%;
   height: 50%;
 }
+
