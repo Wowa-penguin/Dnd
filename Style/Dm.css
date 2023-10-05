@@ -1,12 +1,19 @@
+.control {
+  border: solid 1px black;
+  width: 40px;
+}
+
 .útlínur {
   border: solid 1px black;
   margin: auto;
   width: auto;
   height: 20rem;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.Goblin {
+.enemy {
   border: solid 2px black;
   width: 45%;
   display: flex;
@@ -43,6 +50,9 @@
 .ability-st {
   width: 25%;
   height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ability-st-div {
@@ -50,13 +60,145 @@
   height: 1.5rem;
   width: 8rem;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  gap: 10px;
+}
+
+.smá-plás {
+  width: 10px;
+  height: 10px;
+}
+
+.button-div {
+  margin-top: 2rem;
+}
+
+.display-button {
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  background-color: #30b8a3;
+  border-radius: 90px;
+  color: white;
+  cursor: pointer;
+}
+
+.display-button:hover {
+  opacity: 60%;
 }
 
 /* HIT-POINTS-AC */
+.ac-hp-deathSaves-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ac-initiative-speed {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(205, 203, 203);
+  border-radius: 20px;
+}
+
+.ac,
+.initiative,
+.speed {
+  border: solid 5px rgb(139, 139, 139);
+  height: 5rem;
+  width: 6rem;
+  border-radius: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HIT-POINTS-div {
+  border: solid 2px rgb(139, 139, 139);
+  border-radius: 20px;
+  background-color: rgb(205, 203, 203);
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: space-around;
+}
 
 .HIT-POINTS-AC {
   border: solid 1px blue;
   width: 50%;
+}
+
+.maximum-texst {
+  font-size: 13px;
+}
+
+.display-hit-points-saman-flex {
+  display: flex;
+  gap: 5px;
+}
+
+.HIT-POINTS-input {
+  width: 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(94, 94, 94);;
+  border: none;
+  color: white;
+}
+
+.input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.display-hit-points-texst {
+  font-size: 40px;
+}
+
+.HIT-POINTS-button-mínus,
+.HIT-POINTS-button-Plús {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.HIT-POINTS-button-mínus {
+  background-color: red;
+}
+
+.HIT-POINTS-button-Plús {
+  background-color: green;
+}
+
+.attack {
+  border: solid 1px blue;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.attack-button {
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  border-radius: 90px;
+  background-color: #30b8a3;
+  color: white;
+  cursor: pointer;
+}
+
+.attack-button:hover {
+  opacity: 60%;
 }

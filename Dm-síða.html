@@ -7,78 +7,14 @@
   <link rel="stylesheet" href="Style/Dm.css">
 </head>
 <body>
-  <div class="útlínur">
-    <button onclick=
-      "
-      updateModifierGoblen('str'),
-      updateModifierGoblen('dex'),
-      updateModifierGoblen('con'),
-      updateModifierGoblen('int'),
-      updateModifierGoblen('wis'),
-      updateModifierGoblen('cha')
-      "
-      >Update Stats</button>
-    <div class="Goblin">
-      <div class="ability-modifier">
-        <div class="str-div">
-          <div class="texsti-ability-moifier">STRENGTH</div>
-          <div class="str"></div>
-        </div>
-        <div class="dex-div">
-          <div class="texsti-ability-moifier">DEXTERITY</div>
-          <div class="dex"></div>
-        </div>
-        <div class="con-div">
-          <div class="texsti-ability-moifier">CONSTITUTION</div>
-          <div class="con"></div>
-        </div>
-        <div class="int-div">
-          <div class="texsti-ability-moifier">INTELLIGENCE</div>
-          <div class="int"></div>
-        </div>
-        <div class="wis-div">
-          <div class="texsti-ability-moifier">WISDOM</div>
-          <div class="wis"></div>
-        </div>
-        <div class="cha-div">
-          <div class="texsti-ability-moifier">CHARISMA</div>
-          <div class="cha"></div>
-        </div>
-      </div>
-      <div class="ability-st">
-        <div class="ability-st-div">
-          <div class="str"></div>
-          <div class="texsti-ability-moifier">STRENGTH</div>
-        </div>
-        <div class="ability-st-div">
-          <div class="dex"></div>
-          <div class="texsti-ability-moifier">DEXTERITY</div>
-        </div>
-        <div class="ability-st-div">
-          <div class="con"></div>
-          <div class="texsti-ability-moifier">CONSTITUTION</div>
-        </div>
-        <div class="ability-st-div">
-          <div class="int"></div>
-          <div class="texsti-ability-moifier">INTELLIGENCE</div>
-        </div>
-        <div class="ability-st-div">
-          <div class="wis"></div>
-          <div class="texsti-ability-moifier">WISDOM</div>
-        </div>
-        <div class="ability-st-div">
-          <div class="cha"></div>
-          <div class="texsti-ability-moifier">CHARISMA</div>
-        </div>
-        <div class="texsti-ability-moifier-st">SAVING THROWS</div>
-      </div>
-      <div class="HIT-POINTS-AC">
-
-      </div>
-    </div>
+  <div class="control">
+    <button onclick="goblenSpwan()">Goblen</button>
+  </div>
+  <div class="útlínur stóradmóið">
+    
   </div>
   <!--link fyrir js-->
-  <script src="Javascript/Dm.js">
-  </script>
+  <script src="Javascript/Dm.js"></script>
+  <script src="Javascript/Display-Goblen.js"></script>
 </body>
 </html>
